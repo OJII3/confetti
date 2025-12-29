@@ -46,14 +46,14 @@ impl Particle {
         let vy = (dy / dist) * speed - rng.gen_range(200.0..500.0);
 
         let colors = [
-            (1.0, 0.2, 0.3),   // Red
-            (1.0, 0.5, 0.0),   // Orange
-            (1.0, 0.9, 0.0),   // Yellow
-            (0.2, 0.8, 0.2),   // Green
-            (0.2, 0.6, 1.0),   // Blue
-            (0.6, 0.2, 0.8),   // Purple
-            (1.0, 0.4, 0.7),   // Pink
-            (0.0, 0.9, 0.9),   // Cyan
+            (1.0, 0.2, 0.3), // Red
+            (1.0, 0.5, 0.0), // Orange
+            (1.0, 0.9, 0.0), // Yellow
+            (0.2, 0.8, 0.2), // Green
+            (0.2, 0.6, 1.0), // Blue
+            (0.6, 0.2, 0.8), // Purple
+            (1.0, 0.4, 0.7), // Pink
+            (0.0, 0.9, 0.9), // Cyan
         ];
         let color = colors[rng.gen_range(0..colors.len())];
 
@@ -177,7 +177,10 @@ fn build_ui(app: &Application) {
     let screen_width = geometry.width() as f64;
     let screen_height = geometry.height() as f64;
 
-    let state = Rc::new(RefCell::new(ConfettiState::new(screen_width, screen_height)));
+    let state = Rc::new(RefCell::new(ConfettiState::new(
+        screen_width,
+        screen_height,
+    )));
 
     let drawing_area = DrawingArea::new();
     drawing_area.set_content_width(screen_width as i32);
