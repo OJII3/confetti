@@ -1,0 +1,11 @@
+[package]
+name = "confetti"
+version = "0.1.0"
+edition = "2021"
+description = "Screen-wide confetti animation for Linux desktop"
+license = "MIT"
+
+[dependencies]
+gtk4 = { version = "0.9", features = ["v4_12"] }
+gtk4-layer-shell = "0.4"
+rand = "0.8"

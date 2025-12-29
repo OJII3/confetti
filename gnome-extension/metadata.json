@@ -1,0 +1,8 @@
+{
+  "name": "Confetti",
+  "description": "Screen-wide confetti animation triggered by D-Bus",
+  "uuid": "confetti@ojii3.github.com",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/ojii3/confetti"
+}

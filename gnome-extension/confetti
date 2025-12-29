@@ -1,0 +1,4 @@
+#!/bin/sh
+# Fire confetti via D-Bus
+# Call via GNOME Shell as the service name registration is not working
+gdbus call --session --dest org.gnome.Shell --object-path /com/github/ojii3/Confetti --method com.github.ojii3.Confetti.Fire
